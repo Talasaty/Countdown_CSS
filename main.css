@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url('./img/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    font-weight: 300;
+    overflow: hidden;
+    font-family: impact;
+}
+
+#countDown{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30vh;
+    margin-top: 40vh;
+    text-transform: uppercase;  
+    justify-content: center;
+    align-items: center;
+}
+
+#countDown div {
+    position: absolute;
+    opacity: 0;
+    animation: switch 10s linear 1;
+}
+
+#countDown div:nth-child(1){
+    animation-delay: 3s;
+    color: white;
+}
+
+#countDown div:nth-child(2){
+    animation-delay: 4s;
+    color: white;
+}
+
+#countDown div:nth-child(3){
+    animation-delay: 5s;
+    color: white;
+}
+
+#countDown div:nth-child(4){
+    animation-delay: 6s;
+    color: white;
+}
+
+#countDown div:nth-child(5){
+    animation-delay: 7s;
+    color: white;
+}
+
+#countDown div:nth-child(6){
+    animation-delay: 8s;
+    color: white;
+}
+
+#countDown div:nth-child(7){
+    animation-delay: 9s;
+    color: white;
+}
+
+#countDown div:nth-child(8){
+    animation-delay: 10s;
+    color: white;
+}
+
+#countDown div:nth-child(9){
+    animation-delay: 11s;
+    color: white;
+}
+
+
+#countDown div:nth-child(10){
+    animation-delay: 12s;
+    color: white;
+}
+
+
+
+
+@keyframes switch{
+    0%{
+        opacity: 0;
+        filter: blur(20px);
+        transform: scale(4);
+    }
+    
+    3%{
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    } 
+    
+    10%{
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(0.9);
+    }
+     13%{
+        opacity: 0;
+        filter: blur(10px);
+        transform: scale(0.1);
+    }
+    
+      80%{
+        opacity: 0;
+         
+    }
+       100%{
+        opacity: 0;
+         
+    }
+
+}
+
+
+#countDownFinish{
+    font-size: 17vw;
+    height: 20vh;
+    opacity: 0;
+    margin: -37vh auto;
+    text-align: center;
+    color: orange;
+    animation: out 10s linear 1;
+    animation-delay: 13s;
+}
+
+
+
+@keyframes out {
+0% { opacity: 0;filter: blur(20px); transform:scale(.2)}
+3% { opacity: 1;filter: blur(0); transform:scale(1)}
+10% { opacity: 1;filter: blur(0); transform:scale(.9)}
+30% { opacity: 1;filter: blur(0); transform:scale(.9)}
+31% { opacity: 0}
+32% { opacity: 1}
+33% { opacity: 0}
+34% { opacity: 1}
+35% { opacity: 0}
+36% { opacity: 1}
+37% { opacity: 0}
+38% { opacity: 1}
+39% { opacity: 0}
+40% { opacity: 1}
+60% { opacity: 1;filter: blur(0); transform:scale(.9)}
+}
